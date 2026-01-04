@@ -38,6 +38,7 @@ import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -89,6 +90,7 @@ fun AlignYourBodyElement(
         Image(
             painter = painterResource(R.drawable.ab1_inversions),
             contentDescription = null,
+            contentScale = ContentScale.Crop,
             modifier = Modifier
                 .size(88.dp)
                 .clip(CircleShape)
