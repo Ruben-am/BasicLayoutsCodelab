@@ -63,7 +63,9 @@ fun SearchBar(
             unfocusedContainerColor = MaterialTheme.colorScheme.surface,
             focusedContainerColor = MaterialTheme.colorScheme.surface
         ),
-
+        placeholder = {
+            Text(stringResource(R.string.placeholder_search))
+        },
         modifier = modifier
             .fillMaxWidth()
             .heightIn(min = 56.dp)
