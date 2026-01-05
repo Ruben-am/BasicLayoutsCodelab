@@ -118,7 +118,7 @@ fun AlignYourBodyElement(
 fun FavoriteCollectionCard(
     modifier: Modifier = Modifier,
     @DrawableRes image: Int,
-    @DrawableRes text: Int,
+    @StringRes text: Int,
 ) {
     Surface(
         shape = MaterialTheme.shapes.medium,
